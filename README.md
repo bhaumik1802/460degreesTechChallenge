@@ -1,42 +1,19 @@
-## 460degrees Technical Challenge for System Engineers
+## 460degrees Technical Challenge :
 
-### Deploy the python application in this repo to an application server.
+IaaS Approch : 
+===============
+- Write, Plan, and Create Infrastructure as Code
+- Provision of AWS EC2 instance as an application server.
+- ec2.tf is main terraform file which inclueds all the resources for the application server.
+- terraform.tfvars is the variable file which includes the supporting variable for the TF file. 
+- Please update the AWS access key and secret and other parameters as required.
 
-- Using code, write a deployment procedure to :
-  - provision an application server ( local VM or on your favourite cloud )
-  - use the operating system of your choice
-  - apply appropriate configurations and secure the operating system
-  - install the python application within this repository
-  - make the application available on port 80
+How to Run Terraform:
+=====================
+- Install terraform depending upon your OS : https://www.terraform.io/downloads.html
+- Install terraform and initialise it in working directory, using cmd : terraform init
+- Run terraform plan : The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
+- Run terraform apply : When you apply the execution plan, it will ask for your confirmation before starting its operations.
 
-- Supply documentation to illustrate :
-  - how to execute your deployment code
-  - your assumptions and design considerations
-  - any requirement needed to execute the deployment, eg account details, images, tool dependencies etc..
 
-- How to submit your solution :
-  - submit all scripts and/or configuration required to perform the deployment and the associated documentation.
-  - either submit it as a public git repo or as a zip file via email or file share.
 
-- How to run the python app
-
-      git clone https://github.com/fabian460/460degreesTechChallenge.git
-      $> cd 460degreesTechChallenge
-      $> pip install flask flask-restful
-      $> python server.py
-
-- What are we looking for :
-  - Simplicity
-  - Code quality
-  - Ease of deployment
-  - Idempotency
-  - Security
-  - Anti-fragility
-
-The documentation is a very important part of the submission, it should explain the reasons for your
-approach and any specific trade off made.
-
-Documenting any known short comings of the solution and the reasons why will be seen as more positive than unmentioned issues.
-
-------------------------------------------------------------------------------------
-This Technical challenge was based on one created by the REA group, and I would like to give them credit and thank them for sharing with the community.
