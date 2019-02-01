@@ -15,5 +15,11 @@ How to Run Terraform:
 - Run terraform plan : The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
 - Run terraform apply : When you apply the execution plan, it will ask for your confirmation before starting its operations.
 
+Dockerize an application:
+=========================
+- Install docker on application server.
+- Build : To build our application in a Docker container, we need to create a Dockerfile. A Dockerfile contains the instructions to build your application in a container. 
+- Run : Run the container and make the application available on port 80 using below command : 
+     ##### sudo docker run -it -p 80:5002 460degree
 
 
