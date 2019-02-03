@@ -3,4 +3,4 @@ RUN apk add --update python py-pip
 RUN pip install flask flask-restful
 COPY server.py /src/server.py
 EXPOSE 5003 
-CMD ["python", "/src/server.py", "-p 5003"]
+CMD ["python", "/src/server.py", "-p 5002"]
